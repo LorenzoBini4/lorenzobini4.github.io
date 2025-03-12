@@ -42,9 +42,11 @@
 <ul>
     <li>The first comprehensive <a href="https://viper.unige.ch/doku.php/research:flowcyt" target="_blank" rel="noopener noreferrer">benchmark</a> for multi-class single-cell classification on flow cytometry data, using GNNs and many other state-of-the-art single-cell deep learning techniques!</li>
     <li>A novel method to inject biological priors on different state-of-the-art GNNs for hierarchical single-cell classification; our plug-in module <a href="https://openreview.net/forum?id=HJ5ILdCHFx" target="_blank" rel="noopener noreferrer">FCHC-GNN</a>!</li>
-    <li><a href="https://arxiv.org/abs/2409.03463" target="_blank" rel="noopener noreferrer">Massive Activations</a> in GNNs; the first study revealing the emergence of Massive Activations (MAs) in graph attention layers. By rigorous analysis, we detect MAs, asses their impact across various GNNs, and show these MAs threaten the models' robustness increasing their attack vulnerability. To avoid this, we also introduce the Explicit Bias Term (EBT) as a potential countermeasure to turn MAs off!</li>	
-</ul>
-
+    <li><a href="https://arxiv.org/abs/2409.03463" target="_blank" rel="noopener noreferrer">Characterizing Massive Activations in GNNs</a> – This study provides the first systematic investigation of Massive Activations (MAs) within attention mechanisms of GNNs.
+	    By rigorously comparing activation distributions between untrained (base) and fully trained models across architectures such as GraphTransformer, GraphiT, and SAN (and on diverse benchmarks like ZINC, TOX21, and OGBN-PROTEINS) we reveal how MAs emerge, 
+	    their direct link to learned biases, and their impact on model robustness. Furthermore, our work introduces a novel detection framework based on activation ratio distributions and proposes the Explicit Bias Term (EBT) as an effective countermeasure to 
+	    mitigate MAs, leading the way for more robust, interpretable GNNs.
+    </li></ul>
         </p></div>
         </div>
       </section>
