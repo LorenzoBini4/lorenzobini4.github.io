@@ -2,8 +2,9 @@ import profileRoundPic from '~/assets/images/profile_round.png';
 
 export const mainInfo = {
   name: 'Lorenzo Bini',
-  title: 'PhD Candidate, University of Geneva',
-  email: 'lorenzo.bini@unige.ch',
+  title: 'PhD Candidate @ University of Geneva',
+  location: 'Geneva, Switzerland',
+  email: 'lorenzo.bini [AT] unige.ch',
   profilePic: profileRoundPic.src ?? profileRoundPic,
   socials: [
     { icon: 'fa-brands fa-github', url: 'https://github.com/LorenzoBini4', label: 'GitHub' },

@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     place: 'University of Geneva',
     time: 'PhD — current',
     title: 'PhD Candidate in Artificial Intelligence',
-    subtitle: 'VIPER group with Stéphane Marchand-Maillet working on graph generative models and self-supervised/adversarial learining',
+    subtitle: 'VIPER group with Stéphane Marchand-Maillet working on graph generative models and self-supervised/adversarial learning',
     category: 'school',
   },
   {
