@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
   {
     place: 'Geneva University Hospital (HUG)',
     time: 'Current collaboration',
-    title: 'Minimal Residual Disease detection in Leukemia flow cytometry data',
+    title: 'Minimal Residual Disease detection in Leukemia from flow cytometry data',
     subtitle: 'Active/self-supervised learning for rare AML/ALL event detection',
     category: 'work',
   },
