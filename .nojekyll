@@ -1,0 +1,1 @@
+# Disable GitHub Pages’ default Jekyll processing so files in the `_astro` directory are served.
