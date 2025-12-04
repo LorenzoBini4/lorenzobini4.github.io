@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
     category: 'school',
   },
   {
-    place: 'Geneva University Hospitals (HUG)',
+    place: 'Geneva University Hospital (HUG)',
     time: 'Current collaboration',
     title: 'Minimal Residual Disease detection on flow cytometry',
     subtitle: 'Active/self-supervised learning for rare AML/ALL event detection',
