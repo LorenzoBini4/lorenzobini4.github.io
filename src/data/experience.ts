@@ -9,8 +9,8 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     place: 'Carnegie Mellon University',
-    time: '2025 (6-month internship)',
-    title: 'Visiting Researcher, Computational Biology Department',
+    time: '2025 — current',
+    title: 'PhD Research Internship, Computational Biology Department',
     subtitle: "GenAI for epigenomics and gene regulation in Jian Ma's group",
     category: 'work',
   },
@@ -18,19 +18,19 @@ export const experiences: Experience[] = [
     place: 'University of Geneva',
     time: 'PhD — current',
     title: 'PhD Candidate in Artificial Intelligence',
-    subtitle: 'VIPER group with Stéphane Marchand-Maillet',
+    subtitle: 'VIPER group with Stéphane Marchand-Maillet working on graph generative models and self-supervised learining',
     category: 'school',
   },
   {
     place: 'Geneva University Hospitals (HUG)',
     time: 'Current collaboration',
     title: 'Minimal Residual Disease detection on flow cytometry',
-    subtitle: 'Active/self-supervised learning to streamline physician annotation',
+    subtitle: 'Active/self-supervised learning for rare AML/ALL event detection',
     category: 'work',
   },
   {
     place: 'University of Geneva, CUI',
-    time: 'Teaching',
+    time: 'Teaching — current',
     title: 'Teaching Assistant',
     subtitle: 'Computational Finance; Natural Language Processing; Information Retrieval',
     category: 'work',
