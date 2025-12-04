@@ -28,7 +28,7 @@ export const publications: Publication[] = [
     title: 'Self-Supervised Graph Learning via Spectral Bootstrapping and Laplacian-Based Augmentations',
     url: 'https://arxiv.org/abs/2506.20362',
     authors: 'Lorenzo Bini, Stéphane Marchand-Maillet',
-    venue: 'To appear in 2025 (preprint, under double-blind review as a conference paper).',
+    venue: 'To appear in 2026 (preprint, under double-blind review as a journal paper).',
     paperUrl: 'https://arxiv.org/pdf/2506.20362',
     codeUrl: 'https://github.com/LorenzoBini4/laplaceGNN',
     citeUrl: '/citations/laplaceGNN.html',
