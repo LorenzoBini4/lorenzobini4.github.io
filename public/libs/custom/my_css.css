@@ -22,8 +22,7 @@ h4 {
   margin-right: 10px; }
 .paper {
   margin-bottom: 20px }
-.paper .title {
-  /*text-transform: uppercase; */}
+/* Removed empty ruleset for .paper .title */
 .paper p {
   margin-bottom: 2px }
 .paper-buttons {
