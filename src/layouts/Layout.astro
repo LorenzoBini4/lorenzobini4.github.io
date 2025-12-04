@@ -1,0 +1,100 @@
+---
+import { mainInfo } from '~/data/mainInfo';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="xGwNrd6xXdCT0TtOFDd64vEACPbW90IxihTxso76EBM" />
+    <title>{mainInfo.name} | {title}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
+
+    <link rel="stylesheet" href="/libs/external/skeleton/normalize.css" />
+    <link rel="stylesheet" href="/libs/external/skeleton/skeleton.css" />
+    <link rel="stylesheet" href="/libs/external/skeleton_tabs/skeleton-tabs.css" />
+    <link rel="stylesheet" href="/libs/external/fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="/libs/external/academicons-1.8.6/css/academicons.min.css" />
+    <link rel="stylesheet" href="/libs/external/timeline.css" />
+    <link rel="stylesheet" href="/libs/custom/my_css.css" />
+    <script src="/libs/external/jquery-3.1.1.min.js" is:inline></script>
+    <script src="/libs/external/skeleton_tabs/skeleton-tabs.js" is:inline></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="row">
+          <div class="three columns">
+            <a href="/"><img class="u-max-full-width" src={mainInfo.profilePic} alt={mainInfo.name} /></a>
+          </div>
+          <div class="nine columns main-description">
+            <h1>{mainInfo.name}</h1>
+            <p>{mainInfo.title}</p>
+            <p>{mainInfo.email}</p>
+            <p>
+              {mainInfo.socials.map((item) => (
+                <span onclick={`window.open('${item.url}', '_blank')`} style="cursor: pointer" aria-label={item.label}>
+                  <i class={item.icon}></i>
+                </span>
+              ))}
+            </p>
+            {mainInfo.cvUrl && (
+              <p style="margin-top: 10px">
+                <a class="button" href={mainInfo.cvUrl} target="_blank" rel="noopener noreferrer">CV</a>
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <div class="navbar-spacer"></div>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="#bio">Bio</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#publications">Publications</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#vita">Vitae</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <slot />
+      </main>
+
+      <div class="footer">
+        <div class="row">
+          <div class="four columns">
+            {mainInfo.name}
+          </div>
+          <div class="four columns">
+            {mainInfo.email}
+          </div>
+          <div class="four columns">
+            {mainInfo.socials.map((item) => (
+              <span onclick={`window.open('${item.url}', '_blank')`} style="cursor: pointer" aria-label={item.label}>
+                <i class={item.icon}></i>
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/libs/custom/my_js.js" is:inline></script>
+  </body>
+</html>

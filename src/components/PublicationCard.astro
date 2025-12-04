@@ -1,0 +1,83 @@
+---
+export interface Props {
+  title: string;
+  url?: string;
+  authors: string;
+  venue: string;
+  paperUrl?: string;
+  slidesUrl?: string;
+  posterUrl?: string;
+  videoUrl?: string;
+  codeUrl?: string;
+  dataUrl?: string;
+  citeUrl?: string;
+  selected?: boolean;
+}
+
+const {
+  title,
+  url,
+  authors,
+  venue,
+  paperUrl,
+  slidesUrl,
+  posterUrl,
+  videoUrl,
+  codeUrl,
+  dataUrl,
+  citeUrl,
+} = Astro.props;
+---
+<div class="paper">
+  <p class="title">
+    <b>{title}</b>
+  </p>
+  {authors && <p set:html={authors}></p>}
+  {venue && (
+    <p>
+      <i set:html={venue}></i>
+    </p>
+  )}
+  <div class="paper-buttons">
+    {paperUrl && (
+      <a class="button" href={paperUrl} target="_blank" rel="noopener noreferrer">
+        Paper
+      </a>
+    )}
+    {slidesUrl && (
+      <a class="button" href={slidesUrl} target="_blank" rel="noopener noreferrer">
+        Slides
+      </a>
+    )}
+    {posterUrl && (
+      <a class="button" href={posterUrl} target="_blank" rel="noopener noreferrer">
+        Poster
+      </a>
+    )}
+    {videoUrl && (
+      <a class="button" href={videoUrl} target="_blank" rel="noopener noreferrer">
+        Video
+      </a>
+    )}
+    {codeUrl && (
+      <a class="button" href={codeUrl} target="_blank" rel="noopener noreferrer">
+        Code
+      </a>
+    )}
+    {dataUrl && (
+      <a class="button" href={dataUrl} target="_blank" rel="noopener noreferrer">
+        Data
+      </a>
+    )}
+    {citeUrl && (
+      <a class="button" href={citeUrl} target="_blank" rel="noopener noreferrer">
+        Cite
+      </a>
+    )}
+    {url && !paperUrl && (
+      <a class="button" href={url} target="_blank" rel="noopener noreferrer">
+        Link
+      </a>
+    )}
+  </div>
+</div>

@@ -1,0 +1,134 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import PublicationCard from '~/components/PublicationCard.astro';
+import { mainInfo } from '~/data/mainInfo';
+import { publications } from '~/data/publications';
+import { experiences } from '~/data/experience';
+
+const selectedPublications = publications.filter((pub) => pub.selected);
+const selectedList = selectedPublications.length > 0 ? selectedPublications : publications;
+const scholarUrl = mainInfo.socials.find((s) => s.label === 'Google Scholar')?.url;
+---
+
+<Layout title="Home">
+  <div class="docs-section" id="bio">
+    <h4>Bio</h4>
+    <p>
+      Greetings everyone, I'm Lorenzo, PhD candidate in Artificial Intelligence at the
+      <a href="https://www.unige.ch/sciences/en/" target="_blank" rel="noopener noreferrer">University of Geneva</a>. I work with
+      <a href="https://viper.unige.ch/team/prof-stephane-marchand-maillet" target="_blank" rel="noopener noreferrer">Stéphane Marchand-Maillet</a>
+      as a member of the <a href="https://viper.unige.ch/" target="_blank" rel="noopener noreferrer">VIPER</a> group, closely collaborating
+      with the <a href="http://dmml.ch/" target="_blank" rel="noopener noreferrer">DMML</a> group. My research focuses on developing self-supervised and active
+      learning strategies to streamline costly labeling in high-dimensional data. I specialize in Graph Neural Networks, from adversarial learning to
+      representation learning and anomaly detection in self- or weakly-supervised settings. I'm also building generative models (e.g., DDPMs) for 3D genomics,
+      flow cytometry, scRNA, spatial transcriptomics, and multi-omics data. Lately, I've been using LLMs to streamline routine hospital processes.
+    </p>
+    <p>
+      In collaboration with the Geneva University Hospital (<a href="https://www.hug.ch/en/hematologie/research" target="_blank" rel="noopener noreferrer">HUG</a>),
+      I'm working on detecting Minimal Residual Disease of Acute Lymphoblastic and Myeloid Leukemia from flow cytometry data, where SSL and AL methods reduce the burden
+      of physician-led annotation. I'm also a teaching assistant for “Introduction to Computational Finance,” “Natural Language Processing,” and “Information Retrieval”
+      at the <a href="https://cui.unige.ch/en/" target="_blank" rel="noopener noreferrer">CUI</a>. Recently, I've joined
+      <a href="https://www.cs.cmu.edu/~jianma/" target="_blank" rel="noopener noreferrer">Jian Ma</a>'s group at the
+      <a href="https://cbd.cmu.edu/" target="_blank" rel="noopener noreferrer">Ray and Stephanie Lane Computational Biology Department</a> at
+      <a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer">Carnegie Mellon University</a> for a 6-month internship, working on GenAI for epigenomics
+      and gene regulation.
+    </p>
+    <p>Check out our latest works:</p>
+    <ul>
+      <li>
+        The first comprehensive
+        <a href="https://github.com/LorenzoBini4/FlowCyt-Classification-Benchmark" target="_blank" rel="noopener noreferrer">benchmark</a> for multi-class single-cell
+        classification on flow cytometry data, using GNNs and other state-of-the-art single-cell deep learning techniques.
+      </li>
+      <li>
+        A plug-in module to inject biological priors into state-of-the-art GNNs for hierarchical single-cell classification:
+        <a href="https://openreview.net/pdf?id=HJ5ILdCHFx" target="_blank" rel="noopener noreferrer">FCHC-GNN</a>.
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/2409.03463" target="_blank" rel="noopener noreferrer">Decoding attention</a> for domain-dependent interpretable GNNs: the first
+        study revealing the emergence of <a href="https://arxiv.org/pdf/2409.03463" target="_blank" rel="noopener noreferrer">Massive Activations (MAs)</a> within GNN
+        attention mechanisms, plus an Explicit Bias Term (EBT) to switch them off.
+      </li>
+      <li>
+        <a href="https://icml.cc/virtual/2025/51194" target="_blank" rel="noopener noreferrer">LapDDPM</a>: a conditional graph diffusion probabilistic model for robust
+        and high-fidelity scRNA-seq generation that combines Laplacian positional encodings, spectral adversarial perturbations, and conditional score-based diffusion.
+      </li>
+      <li>
+        A new <a href="https://arxiv.org/abs/2506.20362" target="_blank" rel="noopener noreferrer">self-supervised graph learning</a> framework that bypasses negative
+        sampling via spectral bootstrapping and adversarially enhanced Laplacian-based signals.
+      </li>
+      <li>
+        Our <a href="https://arxiv.org/pdf/2409.03463" target="_blank" rel="noopener noreferrer">MAs</a> paper was accepted as an oral presentation at
+        <a href="https://ecai2025.org" target="_blank" rel="noopener noreferrer">ECAI 2025</a>.
+      </li>
+    </ul>
+  </div>
+
+  <div class="docs-section" id="publications">
+    <h4>Publications</h4>
+    <p>
+      Most recent publications on
+      {scholarUrl ? (
+        <a href={scholarUrl} target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      ) : (
+        'Google Scholar'
+      )}
+      .
+    </p>
+
+    <ul class="tab-nav">
+      <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+      <li><div class="button" data-ref="#papers-all">All</div></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="papers-selected">
+        {selectedList.map((pub) => <PublicationCard {...pub} />)}
+      </div>
+
+      <div class="tab-pane" id="papers-all">
+        {publications.map((pub) => <PublicationCard {...pub} />)}
+      </div>
+    </div>
+  </div>
+
+  <div class="docs-section" id="vita">
+    <h4>Vitae</h4>
+    {mainInfo.cvUrl && (
+      <p>
+        Full CV in <a href={mainInfo.cvUrl} target="_blank" rel="noopener noreferrer">PDF</a>.
+      </p>
+    )}
+    <ul class="timeline">
+      {experiences.map((exp) => (
+        <li>
+          <div class={exp.category === 'work' ? 'direction-l' : 'direction-r'}>
+            <div class="flag-wrapper">
+              <span class="flag">{exp.place}</span>
+              <span class="time-wrapper"><span class="time">{exp.time}</span></span>
+            </div>
+            <div class="desc">
+              <b>{exp.title}</b>
+              {exp.subtitle && (
+                <>
+                  <br />
+                  {exp.subtitle}
+                </>
+              )}
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="docs-section" id="contact">
+    <h4>Contact</h4>
+    <p>Email: {mainInfo.email}</p>
+    <p>
+      Geneva-based: Department of Computer Science, BAT A,
+      <a href="https://maps.app.goo.gl/Qsgwuzun3JRMc2tZ7?g_st=ic" target="_blank" rel="noopener noreferrer">Route de Drize 7 1227 Carouge, Switzerland</a>,
+      Office Room #221.
+    </p>
+  </div>
+</Layout>
