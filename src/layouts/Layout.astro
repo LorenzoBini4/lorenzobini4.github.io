@@ -42,7 +42,7 @@ const { title } = Astro.props;
           </div>
           <div class="nine columns main-description">
             <h1>{mainInfo.name}</h1>
-            <p>{mainInfo.title}</p>
+            <p set:html={mainInfo.titleHtml ?? mainInfo.title}></p>
             <p>{mainInfo.email}</p>
             <p>
               {mainInfo.socials.map((item) => (

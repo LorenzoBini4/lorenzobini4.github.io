@@ -2,7 +2,9 @@ import profileRoundPic from '~/assets/images/profile_round.png';
 
 export const mainInfo = {
   name: 'Lorenzo Bini',
-  title: 'PhD Candidate @ University of Geneva',
+  title: 'PhD Candidate @ University of Geneva | Now at CMU',
+  titleHtml:
+    'PhD Candidate @ <a href="https://www.unige.ch/sciences/en/" target="_blank" rel="noopener noreferrer">University of Geneva</a> | Now at <a href="https://www.cmu.edu/cbd/" target="_blank" rel="noopener noreferrer">CMU</a>',
   location: 'Geneva, Switzerland',
   email: 'lorenzo.bini [AT] unige.ch',
   profilePic: profileRoundPic.src ?? profileRoundPic,
