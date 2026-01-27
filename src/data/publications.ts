@@ -39,7 +39,7 @@ export const publications: Publication[] = [
     url: 'https://ceur-ws.org/Vol-4059/paper2.pdf',
     authors: 'Lorenzo Bini*, Marco Sorbi*, Stéphane Marchand-Maillet',
     venue: "European Conference on Artificial Intelligence (ECAI'2025), Bologna — Oral Presentation + ICLR'2025 Workshop XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, Singapore.",
-    paperUrl: 'https://arxiv.org/pdf/2409.03463',
+    paperUrl: 'https://ceur-ws.org/Vol-4059/paper2.pdf',
     codeUrl: 'https://github.com/LorenzoBini4/GNN-MAs',
     citeUrl: '/citations/gnn-ma.html',
     selected: true,
