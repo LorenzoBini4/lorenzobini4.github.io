@@ -36,7 +36,7 @@ export const publications: Publication[] = [
   },
   {
     title: 'Massive Activations in Graph Neural Networks: Decoding Attention for Domain-Dependent Interpretability',
-    url: 'https://arxiv.org/abs/2409.03463',
+    url: 'https://ceur-ws.org/Vol-4059/paper2.pdf',
     authors: 'Lorenzo Bini*, Marco Sorbi*, Stéphane Marchand-Maillet',
     venue: "European Conference on Artificial Intelligence (ECAI'2025), Bologna — Oral Presentation + ICLR'2025 Workshop XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, Singapore.",
     paperUrl: 'https://arxiv.org/pdf/2409.03463',
