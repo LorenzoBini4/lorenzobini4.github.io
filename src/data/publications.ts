@@ -15,6 +15,15 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    title: 'ChromWeave: Equivariant Generative Modeling of 3D Genome Organization',
+    url: 'https://www.mlsb.io/accepted-papers',
+    authors: 'Shuming Liu, Lorenzo Bini, Hongwei Tu, Jian Ma',
+    venue: 'NeurIPS 2025 MLSB Workshop (work done while at Carnegie Mellon University, under double-blind review as a journal paper).',
+    paperUrl: 'https://www.mlsb.io/accepted-papers',
+    citeUrl: '/citations/chromweave-mlsb.html',
+    selected: true,
+  },
+  {
     title: 'LapDDPM: A Conditional Graph Diffusion Model for scRNA-seq Generation with Spectral Adversarial Perturbations',
     url: 'https://icml.cc/virtual/2025/51194',
     authors: 'Lorenzo Bini, Stéphane Marchand-Maillet',
