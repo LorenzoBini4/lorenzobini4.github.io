@@ -158,14 +158,13 @@ body {
   .navbar-link.active {
     color: #33C3F0; }
   .has-docked-nav .navbar {
-    position: fixed;
-    top: 0;
-    left: 0; }
+    /* Removed fixed positioning so it scrolls normally */
+  }
   .has-docked-nav .navbar-spacer {
-    display: block; }
+    display: none; }
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
-    width: 80%; }
+    width: 100%; }
 
   /* Popover */
   .popover.open {
