@@ -21,8 +21,8 @@ export const publications: Publication[] = [
     authors: 'Shuming Liu, Lorenzo Bini, Hongwei Tu, Jian Ma',
     venue: 'NeurIPS 2025 MLSB Workshop (work done while at Carnegie Mellon University, under double-blind review as a journal paper).',
     paperUrl: '/images/chromweave_nips.pdf',
-    citeUrl: '/citations/chromweave-mlsb.html',
     workshopUrl: 'https://www.mlsb.io/accepted-papers',
+    citeUrl: '/citations/chromweave-mlsb.html',
     selected: true,
   },
   {
