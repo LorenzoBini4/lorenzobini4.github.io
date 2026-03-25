@@ -11,6 +11,7 @@ export interface Props {
   codeUrl?: string;
   dataUrl?: string;
   citeUrl?: string;
+  workshopUrl?: string;
   selected?: boolean;
 }
 
@@ -26,6 +27,7 @@ const {
   codeUrl,
   dataUrl,
   citeUrl,
+  workshopUrl,
 } = Astro.props;
 ---
 <div class="paper">
@@ -72,6 +74,11 @@ const {
     {citeUrl && (
       <a class="button" href={citeUrl} target="_blank" rel="noopener noreferrer">
         Cite
+      </a>
+    )}
+    {workshopUrl && (
+      <a class="button" href={workshopUrl} target="_blank" rel="noopener noreferrer">
+        Workshop
       </a>
     )}
     {url && !paperUrl && (
