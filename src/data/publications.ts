@@ -26,6 +26,16 @@ export const publications: Publication[] = [
     selected: true,
   },
   {
+    title: 'Probing Graph Neural Network Activation Patterns Through Graph Topology',
+    url: 'https://arxiv.org/abs/2602.21092',
+    authors: 'Floriano Tori*, Lorenzo Bini*, Marco Sorbi, Stéphane Marchand-Maillet, Vincent Ginis',
+    venue: 'To appear in 2026 (preprint, under double-blind review as a conference paper).',
+    paperUrl: '/images/probing-mas.pdf',
+    codeUrl: 'https://github.com/LorenzoBini4/GNN-MAs',
+    citeUrl: '/citations/probing-mas.html',
+    selected: true,
+  },
+  {
     title: 'LapDDPM: A Conditional Graph Diffusion Model for scRNA-seq Generation with Spectral Adversarial Perturbations',
     url: 'https://icml.cc/virtual/2025/51194',
     authors: 'Lorenzo Bini, Stéphane Marchand-Maillet',
@@ -55,6 +65,7 @@ export const publications: Publication[] = [
     citeUrl: '/citations/gnn-ma.html',
     selected: true,
   },
+
   {
     title: 'Injecting Hierarchical Biological Priors into Graph Neural Networks for Flow Cytometry Prediction',
     url: 'https://icml.cc/virtual/2024/35934',
