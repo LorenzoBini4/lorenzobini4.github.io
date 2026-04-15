@@ -39,7 +39,8 @@ export const publications: Publication[] = [
     title: 'LapDDPM: A Conditional Graph Diffusion Model for scRNA-seq Generation with Spectral Adversarial Perturbations',
     url: 'https://icml.cc/virtual/2025/51194',
     authors: 'Lorenzo Bini, Stéphane Marchand-Maillet',
-    venue: "ICML'2025 + GenBio Workshop: The Second Workshop on Generative AI and Biology, Vancouver.",
+    venue: `Conference on Health, Inference, and Learning (CHIL'26), Seattle, WA.
+    ICML'2025 GenBio Workshop: The Second Workshop on Generative AI and Biology, Vancouver.`,
     paperUrl: 'https://arxiv.org/pdf/2506.13344',
     codeUrl: 'https://github.com/LorenzoBini4/laplace-DDPM',
     citeUrl: '/citations/lapddpm-icml.html',

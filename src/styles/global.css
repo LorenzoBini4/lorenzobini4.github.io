@@ -127,6 +127,10 @@ a:active {
   font-size: 0.8em;
 }
 
+.paper-venue {
+  white-space: pre-line;
+}
+
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 480px) {
   .container {

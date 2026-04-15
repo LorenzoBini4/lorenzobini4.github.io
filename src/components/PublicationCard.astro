@@ -29,6 +29,8 @@ const {
   citeUrl,
   workshopUrl,
 } = Astro.props;
+
+const venueHtml = venue.replace(/\r?\n\s*/g, '<br />');
 ---
 <div class="paper">
   <p class="title">
@@ -37,7 +39,7 @@ const {
   {authors && <p set:html={authors}></p>}
   {venue && (
     <p>
-      <i set:html={venue}></i>
+      <i set:html={venueHtml}></i>
     </p>
   )}
   <div class="paper-buttons">
