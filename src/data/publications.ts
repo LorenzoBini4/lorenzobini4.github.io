@@ -60,7 +60,8 @@ export const publications: Publication[] = [
     title: 'Massive Activations in Graph Neural Networks: Decoding Attention for Domain-Dependent Interpretability',
     url: 'https://ceur-ws.org/Vol-4059/paper2.pdf',
     authors: 'Lorenzo Bini*, Marco Sorbi*, Stéphane Marchand-Maillet',
-    venue: "European Conference on Artificial Intelligence (ECAI'2025), Bologna — Oral Presentation + ICLR'2025 Workshop XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, Singapore.",
+    venue: `European Conference on Artificial Intelligence (ECAI'2025), Bologna — Oral Presentation. 
+    ICLR'2025 Workshop XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, Singapore.`,
     paperUrl: 'https://ceur-ws.org/Vol-4059/paper2.pdf',
     codeUrl: 'https://github.com/LorenzoBini4/GNN-MAs',
     citeUrl: '/citations/gnn-ma.html',
