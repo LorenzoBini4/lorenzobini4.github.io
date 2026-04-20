@@ -11,7 +11,7 @@ export const experiences: Experience[] = [
     place: 'Carnegie Mellon University',
     time: '2025 — current',
     title: 'PhD Research Internship, Computational Biology Department',
-    subtitle: "GenAI for epigenomics and gene regulation in Jian Ma's group",
+    subtitle: "GenAI for epigenomics and gene regulation in Jian Ma's group - joint collaboration with Harvard University and MIT EECS",
     category: 'work',
   },
   {
