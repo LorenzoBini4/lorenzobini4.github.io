@@ -6,7 +6,7 @@ export const mainInfo = {
   titleHtml:
     'PhD Candidate @ <a href="https://www.unige.ch/sciences/en/" target="_blank" rel="noopener noreferrer">University of Geneva</a> | Now at <a href="https://www.cmu.edu/cbd/" target="_blank" rel="noopener noreferrer">CMU</a>',
   location: 'Geneva, Switzerland',
-  email: 'lorenzo.bini [AT] unige.ch',
+  email: 'lorenzo.bini [AT] unige.ch | lbini [AT] andrew.cmu.edu',
   profilePic: profileRoundPic.src ?? profileRoundPic,
   socials: [
     { icon: 'fa-brands fa-github', url: 'https://github.com/LorenzoBini4', label: 'GitHub' },
