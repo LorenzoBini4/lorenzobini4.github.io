@@ -82,7 +82,7 @@ const { title } = Astro.props;
             {mainInfo.name}
           </div>
           <div class="four columns">
-            {mainInfo.email}
+            <Fragment set:html={mainInfo.email.replace(' | ', ' | <br />')} />
           </div>
           <div class="four columns">
             {mainInfo.socials.map((item) => (
