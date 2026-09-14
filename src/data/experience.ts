@@ -8,6 +8,14 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    place: 'Seattle Children’s Hospital',
+    time: '2026',
+    title: 'Selected Pitch to Investors and Clinicians, CHIL 2026 Unconference — Seattle, WA',
+    subtitle: 'Doctoral research selected to be pitched to venture capital investors and practising physicians, to assess its clinical and commercial merit.',
+    category: 'school',
+  },
+
+  {
     place: 'Columbia University & Bloomberg',
     time: '2026',
     title: 'Selected Presentation — Machine Learning Summer School (MLSS) NYC 2026',
