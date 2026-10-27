@@ -26,7 +26,7 @@ export const publications: Publication[] = [
     selected: true,
   },
   {
-    title: 'LapDDPM: A Conditional Graph Diffusion Model for scRNA-seq Generation with Spectral Adversarial Perturbations',
+    title: 'LapDDPM: Spectral Perturbation Diffusion for Robust Single-Cell Manifold Generation',
     url: '/images/lapddpm_chil2026.pdf',
     authors: 'Lorenzo Bini, Stéphane Marchand-Maillet',
     venue: `Conference on Health, Inference, and Learning (CHIL'26), Seattle, WA — PMLR proceedings.
