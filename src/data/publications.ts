@@ -86,7 +86,7 @@ export const publications: Publication[] = [
     paperUrl: 'https://proceedings.mlr.press/v248/bini24a.html',
     codeUrl: 'https://github.com/LorenzoBini4/FlowCyt-Classification-Benchmark',
     citeUrl: '/citations/flowcyt-benchmark-deep-learning.html',
-    dataUrl: 'https://cuicloud.unige.ch/index.php/s/55PHBLEynrp5pN8',
+    dataUrl: 'https://doi.org/10/hcqwc7',
     selected: true,
   },
 ];
